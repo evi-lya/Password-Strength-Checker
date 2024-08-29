@@ -1,0 +1,112 @@
+/* General style for the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Centered main container */
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Header */
+.header h1 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#current-date {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Internal content */
+.content {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Progress bar container */
+.power-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/* Progress bar for password strength */
+#power-point {
+    height: 12px;
+    width: 0%;
+    background-color: red;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Progress bar colors based on strength */
+#power-point.strength-1 {
+    width: 20%;
+    background-color: red;
+}
+
+#power-point.strength-2 {
+    width: 40%;
+    background-color: orange;
+}
+
+#power-point.strength-3 {
+    width: 60%;
+    background-color: yellow;
+}
+
+#power-point.strength-4 {
+    width: 80%;
+    background-color: lightgreen;
+}
+
+#power-point.strength-5 {
+    width: 100%;
+    background-color: green;
+}
+
+/* Password strength text */
+#strength-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
